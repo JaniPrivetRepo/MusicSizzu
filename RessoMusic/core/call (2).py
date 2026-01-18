@@ -21,20 +21,20 @@ from pytgcalls.types import (AudioQuality, ChatUpdate, MediaStream,
                              StreamEnded, Update, VideoQuality)
 
 import config
-from AloneMusic import LOGGER, YouTube, app
-from AloneMusic.misc import db
-from AloneMusic.utils.database import (add_active_chat, add_active_video_chat,
+from RessoMusic import LOGGER, YouTube, app
+from RessoMusic.misc import db
+from RessoMusic.utils.database import (add_active_chat, add_active_video_chat,
                                        get_lang, get_loop, group_assistant,
                                        is_autoend, music_on,
                                        remove_active_chat,
                                        remove_active_video_chat, set_loop)
-from AloneMusic.utils.exceptions import AssistantErr
-from AloneMusic.utils.formatters import (check_duration, seconds_to_min,
+from RessoMusic.utils.exceptions import AssistantErr
+from RessoMusic.utils.formatters import (check_duration, seconds_to_min,
                                          speed_converter)
-from AloneMusic.utils.inline.play import stream_markup
-from AloneMusic.utils.logger import send_large_error
-from AloneMusic.utils.stream.autoclear import auto_clean
-from AloneMusic.utils.thumbnails import get_thumb
+from RessoMusic.utils.inline.play import stream_markup
+from RessoMusic.utils.logger import send_large_error
+from RessoMusic.utils.stream.autoclear import auto_clean
+from RessoMusic.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
@@ -579,4 +579,4 @@ class Call:
             assistant.on_update()(unified_update_handler)
 
 
-Alone = Call()
+AMBOTOP = Call()
