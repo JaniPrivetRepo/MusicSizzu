@@ -8,7 +8,7 @@ import yt_dlp
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from py_yt import VideosSearch
-from IstkharMusic.utils.formatters import time_to_seconds
+from RessoMusic.formatters import time_to_seconds
 import os
 import glob
 import random
